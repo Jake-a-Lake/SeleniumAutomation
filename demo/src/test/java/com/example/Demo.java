@@ -10,12 +10,15 @@ public class Demo {
     public static void main(String[] args) throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-
-        driver.get("https://www.whattomine.com");
-        Thread.sleep(3000);
-        driver.get("https://www.farmerbrothers.com");
-
+        BraveAutomation brave = new BraveAutomation();
+        
+        
+        // driver.get("https://www.whattomine.com");
+        // Thread.sleep(3000);
+        // driver.get("https://www.farmerbrothers.com");
+        brave.runBraveAutomation(12000);
         driver.quit();
+        //brave.runBraveAutomation(120);
 
     }
 
